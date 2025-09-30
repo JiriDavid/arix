@@ -79,12 +79,15 @@ export default function AboutContent() {
             className="rounded-3xl border border-white/10 bg-white/5 p-8"
           >
             <p className="text-sm text-white/60">
-              “Working with Arix felt like gaining a strategic co-founder. They
-              helped us uncover a sharper narrative, redesign our product
-              experience, and launch on time—all while upleveling our team.”
+              “ I can't recommend David highly enough as a web/graphic
+              designer. His diligence to verify at every step of the entire
+              process to ensure the design was what I was looking for was a
+              plus. Working to ensure your clients, ideas, voice, and taste is
+              fully reflected is what we seek to find. That's what David
+              provided”
             </p>
             <p className="mt-4 text-xs uppercase tracking-[0.3em] text-white/40">
-              Amelia Holt — CEO, Pulse Health
+              Miss Armele — Manager, Maritime Services Africa
             </p>
           </motion.div>
         </div>

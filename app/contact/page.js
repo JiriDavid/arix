@@ -12,17 +12,17 @@ const socials = [
   {
     label: "LinkedIn",
     href: "https://www.linkedin.com/",
-    handle: "@arixinnovations",
+    handle: "coming soon",
   },
   {
     label: "Instagram",
     href: "https://www.instagram.com/",
-    handle: "@arixinnovations",
+    handle: "coming soon",
   },
   {
     label: "WhatsApp",
-    href: "https://wa.me/0000000000",
-    handle: "+1 (555) 123-4567",
+    href: "https://wa.me/9556307048",
+    handle: "+91 955 630 7048",
   },
 ];
 
@@ -45,10 +45,10 @@ export default function ContactPage() {
                     Email
                   </p>
                   <a
-                    href="mailto:hello@arixinnovations.com"
+                    href="mailto:jiridavidpromise@gmail.com"
                     className="mt-2 inline-block text-sm text-white/80 hover:text-electric"
                   >
-                    hello@arixinnovations.com
+                    jiridavidpromise@gmail.com
                   </a>
                 </div>
               </div>
@@ -59,7 +59,7 @@ export default function ContactPage() {
                     Phone
                   </p>
                   <p className="mt-2 text-sm text-white/80">
-                    +1 (555) 789-0123
+                    +91 955 630 7048
                   </p>
                 </div>
               </div>
@@ -70,7 +70,7 @@ export default function ContactPage() {
                     Global studio
                   </p>
                   <p className="mt-2 text-sm text-white/80">
-                    Remote-first from New York, London, and Singapore.
+                    Remote-first from Odisha, India, and Zimbabwe.
                   </p>
                 </div>
               </div>

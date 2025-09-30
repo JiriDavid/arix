@@ -13,7 +13,7 @@ const socials = [
     icon: Instagram,
   },
   {
-    href: "https://wa.me/0000000000",
+    href: "https://wa.me/9556307048",
     label: "WhatsApp",
     icon: MessageCircle,
   },
