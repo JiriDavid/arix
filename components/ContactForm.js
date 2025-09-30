@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import Button from "./Button";
 
 const initialState = { name: "", email: "", message: "" };
@@ -9,6 +10,15 @@ export default function ContactForm() {
   const [form, setForm] = useState(initialState);
   const [status, setStatus] = useState({ type: null, message: "" });
   const [loading, setLoading] = useState(false);
+
+  // Check if EmailJS is configured
+  const isEmailJSConfigured = () => {
+    return !!(
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID &&
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID &&
+      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+    );
+  };
 
   const validate = () => {
     if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
@@ -36,27 +46,48 @@ export default function ContactForm() {
     event.preventDefault();
     if (!validate()) return;
 
+    // Check EmailJS configuration
+    if (!isEmailJSConfigured()) {
+      setStatus({
+        type: "error",
+        message:
+          "Email service is not configured. Please contact us directly at jiridavidpromise@gmail.com",
+      });
+      return;
+    }
+
     setLoading(true);
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      });
+      // EmailJS configuration
+      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+      const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+      const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
-      if (!response.ok) {
-        throw new Error("Failed to send message");
-      }
+      // Template parameters for EmailJS
+      const templateParams = {
+        from_name: form.name,
+        from_email: form.email,
+        to_name: "Arix Innovations",
+        to_email: "jiridavidpromise@gmail.com",
+        message: form.message,
+        reply_to: form.email,
+      };
+
+      // Send email using EmailJS
+      await emailjs.send(serviceId, templateId, templateParams, publicKey);
 
       setStatus({
         type: "success",
-        message: "Message sent! We'll be in touch within 24 hours.",
+        message:
+          "Message sent successfully! We'll be in touch within 24 hours.",
       });
       setForm(initialState);
     } catch (error) {
+      console.error("EmailJS Error:", error);
       setStatus({
         type: "error",
-        message: "Something went wrong. Please try again.",
+        message:
+          "Failed to send message. Please contact us directly at jiridavidpromise@gmail.com",
       });
     } finally {
       setLoading(false);
