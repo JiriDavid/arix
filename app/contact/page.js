@@ -59,7 +59,7 @@ export default function ContactPage() {
                     Phone
                   </p>
                   <p className="mt-2 text-sm text-white/80">
-                    +91 955 630 7048
+                    +91 955 630 7048 / +263 788 775 774
                   </p>
                 </div>
               </div>
