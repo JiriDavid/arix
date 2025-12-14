@@ -3,12 +3,12 @@ import { Linkedin, Instagram, MessageCircle } from "lucide-react";
 
 const socials = [
   {
-    href: "https://www.linkedin.com/",
+    href: "https://www.linkedin.com/in/david-jiri-6ab349222/",
     label: "LinkedIn",
     icon: Linkedin,
   },
   {
-    href: "https://www.instagram.com/",
+    href: "https://www.instagram.com/arixinnovations?igsh=MXF1Zmk1N25pNGdrdA==&utm_source=ig_contact_invite",
     label: "Instagram",
     icon: Instagram,
   },
@@ -35,8 +35,9 @@ export default function Footer() {
             <span className="text-electric">Arix</span> Innovations
           </p>
           <p className="max-w-sm text-sm text-white/60">
-            Crafting digital experiences that feel effortless and deliver
-            measurable growth for forward-thinking brands.
+            We design and build practical websites and digital systems that help
+            small and medium businesses attract customers, build trust, and grow
+            sustainably.
           </p>
         </div>
         <div className="flex flex-col gap-8 md:flex-row md:gap-14">

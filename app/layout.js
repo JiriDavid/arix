@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import InteractiveBackground from "@/components/effects/InteractiveBackground";
 import { Poppins, Inter } from "next/font/google";
+import { BackgroundRippleEffect } from "@/components/ui/background-ripple-effect";
 
 const poppins = Poppins({
   subsets: ["latin"],

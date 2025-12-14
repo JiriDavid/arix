@@ -11,13 +11,13 @@ export const metadata = {
 const socials = [
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/",
-    handle: "coming soon",
+    href: "https://www.linkedin.com/in/david-jiri-6ab349222/",
+    handle: "David Jiri",
   },
   {
     label: "Instagram",
-    href: "https://www.instagram.com/",
-    handle: "coming soon",
+    href: "https://www.instagram.com/arixinnovations?igsh=MXF1Zmk1N25pNGdrdA==&utm_source=ig_contact_invite",
+    handle: "arixinnovations",
   },
   {
     label: "WhatsApp",
@@ -30,10 +30,11 @@ export default function ContactPage() {
   return (
     <div className="mx-auto max-w-6xl px-6 pb-24">
       <SectionTitle
-        eyebrow="Let's build"
-        title="Tell us about the next chapter you're shaping"
-        description="Share a few details about your timeline, goals, and audience. We'll respond within one business day with next steps."
+        eyebrow="Get started"
+        title="Tell us about your business and what you need online"
+        description="Share a few details about your goals, timeline, and business type. We’ll review them and get back to you within one business day."
       />
+
       <div className="mt-16 grid gap-12 lg:grid-cols-[1.1fr_0.9fr]">
         <div className="space-y-8">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
