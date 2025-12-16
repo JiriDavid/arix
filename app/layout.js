@@ -24,12 +24,12 @@ export const metadata = {
     template: "%s | Arix Innovations",
   },
   description:
-    "Arix Innovations is a digital agency crafting bold web experiences, brand systems, and growth engines for visionary teams.",
+    "Arix Innovations is a digital agency that designs and builds practical websites and digital systems to help small and medium businesses grow.",
   metadataBase: new URL("https://arix-innovations.vercel.app"),
   openGraph: {
     title: "Arix Innovations | Digital Agency",
     description:
-      "Arix Innovations is a digital agency crafting bold web experiences, brand systems, and growth engines for visionary teams.",
+      "Arix Innovations is a digital agency that designs and builds practical websites and digital systems to help small and medium businesses grow.",
     url: "https://arix-innovations.vercel.app",
     siteName: "Arix Innovations",
     images: [
@@ -47,7 +47,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Arix Innovations | Digital Agency",
     description:
-      "Crafting bold web experiences, brand systems, and growth engines for visionary teams.",
+      "We design and build modern websites and digital solutions that support business growth.",
     images: [
       "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
     ],
