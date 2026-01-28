@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
@@ -38,8 +39,14 @@ export default function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link href="/" className="text-lg font-semibold tracking-tight">
-          <span className="text-electric">Arix</span> Innovations
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/logo.png"
+            alt="Arix Innovations"
+            width={100}
+            height={36}
+            priority
+          />
         </Link>
         <div className="hidden items-center gap-8 text-sm font-medium md:flex">
           {links.map((link) => (

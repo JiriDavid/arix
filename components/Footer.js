@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Linkedin, Instagram, MessageCircle } from "lucide-react";
 
 const socials = [
@@ -31,9 +32,15 @@ export default function Footer() {
     <footer className="border-t border-white/10 bg-navy/90">
       <div className="mx-auto flex max-w-6xl flex-col gap-10 px-6 py-12 md:flex-row md:justify-between">
         <div className="space-y-4">
-          <p className="text-lg font-semibold tracking-tight">
-            <span className="text-electric">Arix</span> Innovations
-          </p>
+          <div className="flex items-center">
+            <Image
+              src="/logo.png"
+              alt="Arix Innovations"
+              width={140}
+              height={36}
+              priority
+            />
+          </div>
           <p className="max-w-sm text-sm text-white/60">
             We design and build practical websites and digital systems that help
             small and medium businesses attract customers, build trust, and grow
